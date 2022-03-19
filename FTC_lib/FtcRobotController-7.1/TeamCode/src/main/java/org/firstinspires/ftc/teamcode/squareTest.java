@@ -5,7 +5,7 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
 @TeleOp(name = "Skeloton Op Mode", group = "TeleOp")
-public class skeletonOp extends OpMode{
+public class squareTest extends OpMode{
 
     @Override
     public void init() {
@@ -15,8 +15,7 @@ public class skeletonOp extends OpMode{
         motor2 = hardwareMap.get(DcMotor.class, "motor2");
         motor3 = hardwareMap.get(DcMotor.class, "motor3");
         motor4 = hardwareMap.get(DcMotor.class, "motor4");
-    }
-    @Override
+    }    @Override
     public void start() {
         motorSpeed(5, 5, 5, 5); // this is up
         motorSpeed(5, -5, -5, 5); // this is right
