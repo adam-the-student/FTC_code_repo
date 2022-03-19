@@ -1,18 +1,23 @@
 package org.firstinspires.ftc.teamcode;
 
-import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
+import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 
-@TeleOp(name = "Skeloton Op Mode", group = "TeleOp")
-public class squareTest extends OpMode{
+@Autonomous(name = "squareTest", group = "Autonomous")
+public class squareTest extends OpMode {
+
+    private DcMotor motor1;
+    private DcMotor motor2;
+    private DcMotor motor3;
+    private DcMotor motor4;
 
     @Override
     public void init() {
-        telemetry.addData("Status", "Initialized");
+
 
         motor1 = hardwareMap.get(DcMotor.class, "motor1");
         motor2 = hardwareMap.get(DcMotor.class, "motor2");
@@ -43,4 +48,3 @@ public class squareTest extends OpMode{
 
 }
 
-}
