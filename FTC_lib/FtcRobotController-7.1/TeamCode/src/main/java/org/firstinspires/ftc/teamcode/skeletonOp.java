@@ -6,6 +6,7 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 
 @TeleOp(name = "Skeloton Op Mode", group = "TeleOp")
 public class skeletonOp extends OpMode{
+
     @Override
     public void init() {
 
@@ -24,4 +25,5 @@ public class skeletonOp extends OpMode{
     public void stop() {
 
     }
+
 }
