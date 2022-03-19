@@ -2,14 +2,19 @@ package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
-
+import com.qualcomm.robotcore.hardware.DcMotor;
 
 @TeleOp(name = "Skeloton Op Mode", group = "TeleOp")
 public class skeletonOp extends OpMode{
 
     @Override
     public void init() {
+        telemetry.addData("Status", "Initialized");
 
+        motor1 = hardwareMap.get(DcMotor.class, "motor1");
+        motor2 = hardwareMap.get(DcMotor.class, "motor2");
+        motor3 = hardwareMap.get(DcMotor.class, "motor3");
+        motor4 = hardwareMap.get(DcMotor.class, "motor4");
     }
     @Override
     public void start() {
@@ -28,22 +33,10 @@ public class skeletonOp extends OpMode{
     public void stop() {
 
     }
-    public static void motorSpeed(int speed1 , int speed2 , int speed3 , int speed4){
+    public void motorSpeed(int speed1 , int speed2 , int speed3 , int speed4){
 
-        int motor1;
-        int motor2;
-        int motor3;
-        int motor4;
 
-        motor1.setVelocity(speed1);
-        motor2.setVelocity(speed2);
-        motor3.setVelocity(speed3);
-        motor4.setVelocity(speed4);
 
-        motor1.setTargetPosition(10);
-        motor2.setTargetPosition(10);
-        motor3.setTargetPosition(10);
-        motor4.setTargetPosition(10);
     }
 
 }
