@@ -9,7 +9,7 @@ import com.qualcomm.robotcore.hardware.DcMotorSimple;
 
 @Autonomous(name = "squareTest", group = "Autonomous")
 public class squareTest extends OpMode {
-
+//hardware maping
     private DcMotor motor1;
     private DcMotor motor2;
     private DcMotor motor3;
