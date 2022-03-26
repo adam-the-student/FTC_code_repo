@@ -41,9 +41,14 @@ public class squareTest extends OpMode {
 
     }
     public void motorSpeed(int speed1 , int speed2 , int speed3 , int speed4){
-
-
-
+    motor1.setPower(5);
+    motor2.setPower(5);
+    motor3.setPower(5);
+    motor4.setPower(5);
+    motor1.setTargetPosition(100);
+    motor2.setTargetPosition(100);
+    motor3.setTargetPosition(100);
+    motor4.setTargetPosition(100);
     }
 
 }
