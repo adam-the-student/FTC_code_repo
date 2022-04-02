@@ -31,9 +31,14 @@ public class Donut extends LinearOpMode {
                 motor3.setPower(0);
                 motor4.setPower(0);
                 if(gamepad1.a){
-                    motor1.setPower(1);
-                    motor3.setPower(1);
-                    motor4.setPower(1);
+                    motor1.setPower(2);
+                    motor3.setPower(2);
+                    motor4.setPower(2);
+                }
+                if (gamepad1.b){
+                    motor1.setPower(-2);
+                    motor3.setPower(-2);
+                    motor4.setPower(-2);
                 }
 
             }
