@@ -4,7 +4,7 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
-@TeleOp(name = "MOVE new", group = "teleop")
+@TeleOp(name = "Donut", group = "teleop")
 public class Donut extends LinearOpMode {
 
     private DcMotor motor1;
