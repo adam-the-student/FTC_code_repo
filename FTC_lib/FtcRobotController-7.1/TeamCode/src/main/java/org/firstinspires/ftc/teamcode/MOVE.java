@@ -32,6 +32,9 @@ public class MOVE extends LinearOpMode {
                 motor4.setPower(gamepad1.left_stick_y);
                 motor2.setPower(-gamepad1.right_stick_y);
                 motor3.setPower(gamepad1.right_stick_y);
+                if(gamepad1.dpad_down){
+                    motor2.setPower(0);
+                }
                 telemetry.update();
             }
         }
