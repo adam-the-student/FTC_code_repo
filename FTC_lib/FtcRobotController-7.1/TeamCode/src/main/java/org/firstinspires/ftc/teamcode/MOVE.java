@@ -28,9 +28,6 @@ public class MOVE extends LinearOpMode {
             // Put run blocks here.
             while (opModeIsActive()) {
 
-                if(gamepad1.dpad_down){
-                    motor2.setPower(0);
-                }
                 // Put loop blocks here.
                 motor1.setPower(-gamepad1.left_stick_y);
                 motor4.setPower(gamepad1.left_stick_y);
