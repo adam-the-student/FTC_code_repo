@@ -28,6 +28,9 @@ public class Donut extends LinearOpMode {
             // Put run blocks here.
             while (opModeIsActive()) {
                 //put loop code here
+                motor1.setPower(0);
+                motor3.setPower(0);
+                motor4.setPower(0);
                 if(gamepad1.a){
                     motor1.setPower(1);
                     motor3.setPower(1);
