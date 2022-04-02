@@ -25,6 +25,7 @@ public class squareTest extends OpMode {
         motor4 = hardwareMap.get(DcMotor.class, "motor4");
     }    @Override
     public void start() {
+        //we alternate motor direction to
         motorSpeed(5, 5, 5, 5); // this is up
         motorSpeed(5, -5, -5, 5); // this is right
         motorSpeed(-5, -5, -5, -5); // this is down

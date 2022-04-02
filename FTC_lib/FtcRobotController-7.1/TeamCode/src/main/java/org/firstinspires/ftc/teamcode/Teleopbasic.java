@@ -18,7 +18,6 @@ public class Teleopbasic extends OpMode{
 
     @Override
     public void loop() {
-
     }
 
     @Override
