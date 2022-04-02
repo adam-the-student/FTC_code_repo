@@ -29,5 +29,4 @@ public class skeletonOp extends OpMode {
     public void stop() {
 
     }
-
 }
