@@ -5,7 +5,7 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
 @TeleOp(name = "MOVE new", group = "teleop")
-public class MOVE extends LinearOpMode {
+public class Donut extends LinearOpMode {
 
     private DcMotor motor1;
     private DcMotor motor4;
@@ -27,16 +27,7 @@ public class MOVE extends LinearOpMode {
         if (opModeIsActive()) {
             // Put run blocks here.
             while (opModeIsActive()) {
-
-                if(gamepad1.dpad_down){
-                    motor2.setPower(-gamepad1.right_stick_y + -gamepad1.right_stick_y);
-                }
-                // Put loop blocks here.
-                motor1.setPower(-gamepad1.left_stick_y);
-                motor4.setPower(gamepad1.left_stick_y);
-                motor2.setPower(-gamepad1.right_stick_y);
-                motor3.setPower(gamepad1.right_stick_y);
-                telemetry.update();
+                //put loop code here
             }
         }
     }
