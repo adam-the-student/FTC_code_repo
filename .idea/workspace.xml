@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8737e26c-f4fb-44df-a4b5-9a7233510fd1" name="Default Changelist" comment="removed the donout the MOVE Class. - Fawwaz">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Donut.java" beforeDir="false" afterPath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Donut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/MOVE.java" beforeDir="false" afterPath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/MOVE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Teleopbasic.java" beforeDir="false" afterPath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Teleopbasic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/squareTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/squareTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="8737e26c-f4fb-44df-a4b5-9a7233510fd1" name="Default Changelist" comment="add donout class and code it. remove donout in MOVE class  - Fawwaz" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -145,7 +139,35 @@
       <option name="project" value="LOCAL" />
       <updated>1648921696177</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added donout classs and coded it. - Fawwaz">
+      <created>1648922384654</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1648922384655</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add donout class and code it. remove donout in MOVE class  - Fawwaz">
+      <created>1648922489667</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1648922489667</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add donout class and code it. remove donout in MOVE class  - Fawwaz">
+      <created>1648922535715</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1648922535715</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add donout class and code it. remove donout in MOVE class  - Fawwaz">
+      <created>1648922822032</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1648922822032</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,6 +188,8 @@
     <MESSAGE value="put my code for square in there. - Fawwaz" />
     <MESSAGE value="troubleshooted the MOVE Class. - Fawwaz" />
     <MESSAGE value="removed the donout the MOVE Class. - Fawwaz" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed the donout the MOVE Class. - Fawwaz" />
+    <MESSAGE value="added donout classs and coded it. - Fawwaz" />
+    <MESSAGE value="add donout class and code it. remove donout in MOVE class  - Fawwaz" />
+    <option name="LAST_COMMIT_MESSAGE" value="add donout class and code it. remove donout in MOVE class  - Fawwaz" />
   </component>
 </project>
