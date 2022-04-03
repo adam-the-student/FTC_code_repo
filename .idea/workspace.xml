@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8737e26c-f4fb-44df-a4b5-9a7233510fd1" name="Default Changelist" comment="troubleshooted everything - Fawwaz">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8737e26c-f4fb-44df-a4b5-9a7233510fd1" name="Default Changelist" comment="Add comments so people can understand a bit better. - Fawwaz">
+      <change beforePath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Donut.java" beforeDir="false" afterPath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Donut.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648943648825</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add comments so people can understand a bit better. - Fawwaz">
+      <created>1649024981203</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1649024981203</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -224,6 +231,7 @@
     <MESSAGE value=" code donut. - Fawwaz" />
     <MESSAGE value=" put a prototype for driving, (left stick is for diretion and right to turn) - Fawwaz" />
     <MESSAGE value="troubleshooted everything - Fawwaz" />
-    <option name="LAST_COMMIT_MESSAGE" value="troubleshooted everything - Fawwaz" />
+    <MESSAGE value="Add comments so people can understand a bit better. - Fawwaz" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add comments so people can understand a bit better. - Fawwaz" />
   </component>
 </project>
