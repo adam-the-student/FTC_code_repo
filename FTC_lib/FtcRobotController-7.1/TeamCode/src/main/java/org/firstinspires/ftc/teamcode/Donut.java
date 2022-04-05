@@ -41,7 +41,7 @@ public class Donut extends LinearOpMode {
                     motor4.setPower(1.5);
                 }
 
-                // if the x(a) button is pressed then we do regulaur donuts.
+                // if the o(b) button is pressed then we do regulaur donuts.
                 if (gamepad1.b){
                     //set power for three motors to do donuts
                     motor1.setPower(-1.5);
