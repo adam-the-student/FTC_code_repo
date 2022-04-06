@@ -27,19 +27,28 @@ public class Donut extends LinearOpMode {
         if (opModeIsActive()) {
             // Put run blocks here.
             while (opModeIsActive()) {
+
+                // first set power of all the motors to 0. (they don't move)
                 motor1.setPower(0);
                 motor3.setPower(0);
                 motor4.setPower(0);
+
+                // if the x(a) button is pressed then we do backward donuts.
                 if(gamepad1.a){
-                    motor1.setPower(2);
-                    motor3.setPower(2);
-                    motor4.setPower(2);
+                    //set power for three motors to do donuts
+                    motor1.setPower(1.5);
+                    motor3.setPower(1.5);
+                    motor4.setPower(1.5);
                 }
+
+                // if the o(b) button is pressed then we do regulaur donuts.
                 if (gamepad1.b){
-                    motor1.setPower(-2);
-                    motor3.setPower(-2);
-                    motor4.setPower(-2);
+                    //set power for three motors to do donuts
+                    motor1.setPower(-1.5);
+                    motor3.setPower(-1.5);
+                    motor4.setPower(-1.5);
                 }
+
 
             }
         }
