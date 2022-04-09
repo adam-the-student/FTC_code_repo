@@ -126,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649529982299</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary=" counter strafing in MOVE NEW. - Fawwaz">
+      <created>1649534085242</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1649534085242</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -144,6 +151,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="put my name on the README" />
     <MESSAGE value="Debug Autotest.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Debug Autotest.java" />
+    <MESSAGE value=" counter strafing in MOVE NEW. - Fawwaz" />
+    <option name="LAST_COMMIT_MESSAGE" value=" counter strafing in MOVE NEW. - Fawwaz" />
   </component>
 </project>
