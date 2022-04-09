@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8737e26c-f4fb-44df-a4b5-9a7233510fd1" name="Default Changelist" comment="Add comments so people can understand. - Fawwaz">
+    <list default="true" id="8737e26c-f4fb-44df-a4b5-9a7233510fd1" name="Default Changelist" comment="put my name on the README">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/MOVE.java" beforeDir="false" afterPath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/MOVE.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Autotest.java" beforeDir="false" afterPath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Autotest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,14 +23,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
-  </component>
   <component name="ProjectId" id="26749gTpIGsDdBHVOTGuMSwsvrN" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -41,7 +34,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Autotest.java" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -50,6 +43,7 @@
   </component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="robothing.app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
@@ -122,105 +116,7 @@
       <option name="project" value="LOCAL" />
       <updated>1647105062632</updated>
     </task>
-    <task id="LOCAL-00002" summary="put the import statements - Fawwaz">
-      <created>1647714658473</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1647714658473</updated>
-    </task>
-    <task id="LOCAL-00003" summary="put my code for square in there. - Fawwaz">
-      <created>1647718427111</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1647718427111</updated>
-    </task>
-    <task id="LOCAL-00004" summary="troubleshooted the MOVE Class. - Fawwaz">
-      <created>1648920763521</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1648920763522</updated>
-    </task>
-    <task id="LOCAL-00005" summary="removed the donout the MOVE Class. - Fawwaz">
-      <created>1648921696177</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1648921696177</updated>
-    </task>
-    <task id="LOCAL-00006" summary="added donout classs and coded it. - Fawwaz">
-      <created>1648922384654</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1648922384655</updated>
-    </task>
-    <task id="LOCAL-00007" summary="add donout class and code it. remove donout in MOVE class  - Fawwaz">
-      <created>1648922489667</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1648922489667</updated>
-    </task>
-    <task id="LOCAL-00008" summary="add donout class and code it. remove donout in MOVE class  - Fawwaz">
-      <created>1648922535715</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1648922535715</updated>
-    </task>
-    <task id="LOCAL-00009" summary="add donout class and code it. remove donout in MOVE class  - Fawwaz">
-      <created>1648922822032</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1648922822032</updated>
-    </task>
-    <task id="LOCAL-00010" summary=" code donut. - Fawwaz">
-      <created>1648923355067</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1648923355067</updated>
-    </task>
-    <task id="LOCAL-00011" summary=" put a prototype for driving, (left stick is for diretion and right to turn) - Fawwaz">
-      <created>1648941902407</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1648941902407</updated>
-    </task>
-    <task id="LOCAL-00012" summary="troubleshooted everything - Fawwaz">
-      <created>1648943648825</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1648943648825</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Add comments so people can understand a bit better. - Fawwaz">
-      <created>1649024981203</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1649024981203</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Add comments so people can understand a bit better. - Fawwaz">
-      <created>1649025012412</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1649025012412</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Add comments so people can understand. - Fawwaz">
-      <created>1649195588538</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1649195588538</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -237,28 +133,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="put my name on the README" />
-    <MESSAGE value="put the import statements - Fawwaz" />
-    <MESSAGE value="put my code for square in there. - Fawwaz" />
-    <MESSAGE value="troubleshooted the MOVE Class. - Fawwaz" />
-    <MESSAGE value="removed the donout the MOVE Class. - Fawwaz" />
-    <MESSAGE value="added donout classs and coded it. - Fawwaz" />
-    <MESSAGE value="add donout class and code it. remove donout in MOVE class  - Fawwaz" />
-    <MESSAGE value=" code donut. - Fawwaz" />
-    <MESSAGE value=" put a prototype for driving, (left stick is for diretion and right to turn) - Fawwaz" />
-    <MESSAGE value="troubleshooted everything - Fawwaz" />
-    <MESSAGE value="Add comments so people can understand a bit better. - Fawwaz" />
-    <MESSAGE value="Add comments so people can understand. - Fawwaz" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add comments so people can understand. - Fawwaz" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Donut.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <option name="LAST_COMMIT_MESSAGE" value="put my name on the README" />
   </component>
 </project>
