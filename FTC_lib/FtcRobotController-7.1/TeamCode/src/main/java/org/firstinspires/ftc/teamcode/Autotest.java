@@ -26,10 +26,14 @@ public class Autotest extends OpMode {
     public void start() {
 
         //we alternate motor direction to
-        motor1.setTargetPosition(1400); //we control how far the motors turn.
-        motor2.setTargetPosition(-1400);
-        motor3.setTargetPosition(1400);
-        motor4.setTargetPosition(-1400);
+        motor1.setTargetPosition(10000); //we control how far the motors turn.
+        motor2.setTargetPosition(-10000);
+        motor3.setTargetPosition(10000);
+        motor4.setTargetPosition(-10000);
+        motor1.getTargetPosition();
+        motor2.getTargetPosition();
+        motor3.getTargetPosition();
+        motor4.getTargetPosition();
 
 
     }
