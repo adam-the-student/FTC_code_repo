@@ -24,7 +24,18 @@ public class squareTest extends OpMode {
         motor2 = hardwareMap.get(DcMotorEx.class, "motor2");
         motor3 = hardwareMap.get(DcMotorEx.class, "motor3");
         motor4 = hardwareMap.get(DcMotorEx.class, "motor4");
-    }    @Override
+    }
+    public void motorSpeed(int speed1 , int speed2 , int speed3 , int speed4){
+        motor1.setVelocity(speed1); //we first sey the speed of all the motors to what ever speed we want
+        motor2.setVelocity(speed2);
+        motor3.setVelocity(speed3);
+        motor4.setVelocity(speed4);
+        motor1.setTargetPosition(100); //we control how far the motors turn.
+        motor2.setTargetPosition(100);
+        motor3.setTargetPosition(100);
+        motor4.setTargetPosition(100);
+    }
+    @Override
     public void start() {
         //we alternate motor direction to
         motorSpeed(5, 5, 5, 5); // this is up
@@ -42,16 +53,7 @@ public class squareTest extends OpMode {
     public void stop() {
 
     }
-    public void motorSpeed(int speed1 , int speed2 , int speed3 , int speed4){
-    motor1.setVelocity(speed1); //we first sey the speed of all the motors to what ever speed we want
-    motor2.setVelocity(speed2);
-    motor3.setVelocity(speed3);
-    motor4.setVelocity(speed4);
-    motor1.setTargetPosition(100); //we control how far the motors turn.
-    motor2.setTargetPosition(100);
-    motor3.setTargetPosition(100);
-    motor4.setTargetPosition(100);
-    }
+
 
 }
 
