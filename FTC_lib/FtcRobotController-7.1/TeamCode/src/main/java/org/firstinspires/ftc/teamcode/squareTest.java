@@ -5,24 +5,25 @@ import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DcMotorEx;
 import com.qualcomm.robotcore.hardware.DcMotorSimple;
 
 @Autonomous(name = "squareTest", group = "Autonomous")
 public class squareTest extends OpMode {
 //hardware maping
-    private DcMotor motor1;
-    private DcMotor motor2;
-    private DcMotor motor3;
-    private DcMotor motor4;
+    private DcMotorEx motor1;
+    private DcMotorEx motor2;
+    private DcMotorEx motor3;
+    private DcMotorEx motor4;
 
     @Override
     public void init() {
 
 
-        motor1 = hardwareMap.get(DcMotor.class, "motor1");
-        motor2 = hardwareMap.get(DcMotor.class, "motor2");
-        motor3 = hardwareMap.get(DcMotor.class, "motor3");
-        motor4 = hardwareMap.get(DcMotor.class, "motor4");
+        motor1 = hardwareMap.get(DcMotorEx.class, "motor1");
+        motor2 = hardwareMap.get(DcMotorEx.class, "motor2");
+        motor3 = hardwareMap.get(DcMotorEx.class, "motor3");
+        motor4 = hardwareMap.get(DcMotorEx.class, "motor4");
     }    @Override
     public void start() {
         //we alternate motor direction to
