@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8737e26c-f4fb-44df-a4b5-9a7233510fd1" name="Default Changelist" comment="Add comments so people can understand a bit better. - Fawwaz">
+    <list default="true" id="8737e26c-f4fb-44df-a4b5-9a7233510fd1" name="Default Changelist" comment="Add comments so people can understand. - Fawwaz">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Donut.java" beforeDir="false" afterPath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Donut.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/squareTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/squareTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/MOVE.java" beforeDir="false" afterPath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/MOVE.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649025012412</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Add comments so people can understand. - Fawwaz">
+      <created>1649195588538</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1649195588538</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -241,6 +247,18 @@
     <MESSAGE value=" put a prototype for driving, (left stick is for diretion and right to turn) - Fawwaz" />
     <MESSAGE value="troubleshooted everything - Fawwaz" />
     <MESSAGE value="Add comments so people can understand a bit better. - Fawwaz" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add comments so people can understand a bit better. - Fawwaz" />
+    <MESSAGE value="Add comments so people can understand. - Fawwaz" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add comments so people can understand. - Fawwaz" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Donut.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
