@@ -18,14 +18,12 @@ public class Autotest extends LinearOpMode {
         motor3 = hardwareMap.get(DcMotorEx.class, "motor3");
         motor4 = hardwareMap.get(DcMotorEx.class, "motor4");
         waitForStart();
-        motor1.setVelocity(1);
-        motor2.setVelocity(-1);
-        motor3.setVelocity(1);
-        motor4.setVelocity(-1);
-        motor1.setTargetPosition(1440); //we control how far the motors turn.
-        motor2.setTargetPosition(1440);
-        motor3.setTargetPosition(1440);
-        motor4.setTargetPosition(1440);
+        motor1.setPower(-.5);
+        motor2.setPower(.5);
+        motor3.setPower(-.5);
+        motor4.setPower(.5);
+        sleep(1000);
+
     }
 //hardware maping
 }
