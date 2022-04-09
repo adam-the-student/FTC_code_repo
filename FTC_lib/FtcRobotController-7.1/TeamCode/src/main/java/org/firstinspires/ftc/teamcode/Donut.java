@@ -18,9 +18,9 @@ public class Donut extends LinearOpMode {
     @Override
     public void runOpMode() {
         motor1 = hardwareMap.dcMotor.get("motor1");
-        motor4 = hardwareMap.dcMotor.get("motor4");
         motor2 = hardwareMap.dcMotor.get("motor2");
         motor3 = hardwareMap.dcMotor.get("motor3");
+        motor4 = hardwareMap.dcMotor.get("motor4");
 
         // Put initialization blocks here.
         waitForStart();
