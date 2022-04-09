@@ -37,17 +37,20 @@ public class MOVE extends LinearOpMode {
                 // Denominator is the largest motor power (absolute value) or 1
                 // This ensures all the powers maintain the same ratio, but only when
                 // at least one is out of the range [-1, 1]
-                double denominator = Math.max(Math.abs(y) + Math.abs(x) + Math.abs(rx), 1); /** i found this part from internet, it helps stabalize movement.*/
-                double motor1Power = (y + x + rx) / denominator; // motor1 is top left corner
-                double motor2Power = (y - x - rx) / denominator; // motor2 is top right corner
-                double motor3Power = (y - x + rx) / denominator; // motor3 is bottom left corner
-                double motor4Power = (y + x - rx) / denominator; // motor4 is bottom right corner
+
+                /** i found this part from internet, it helps stabalize movement.*/
+                double denominator = Math.max(Math.abs(y) + Math.abs(x) + Math.abs(rx), 1);
+
+                double motor1Power = (y + x + rx) / denominator;// motor1 is top left corner
+                double motor2Power = (y - x - rx) / denominator;// motor2 is top right corner
+                double motor3Power = (y - x + rx) / denominator;// motor3 is bottom left corner
+                double motor4Power = (y + x - rx) / denominator;// motor4 is bottom right corner
 
                 // motors 2 and 4 are placed backwards so we need to reverse the power.
-                motor1.setPower(motor1Power); // motor1 is top left
-                motor2.setPower(-motor2Power); // motor2 is top right
-                motor3.setPower(motor3Power); // motor3 is bottom left
-                motor4.setPower(-motor4Power); // motor4 is bottom right
+                motor1.setPower(motor1Power);
+                motor2.setPower(-motor2Power);
+                motor3.setPower(motor3Power);
+                motor4.setPower(-motor4Power);
 
                 telemetry.update();
             }
