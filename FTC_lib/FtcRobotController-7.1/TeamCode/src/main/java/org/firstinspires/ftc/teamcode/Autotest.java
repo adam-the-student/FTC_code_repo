@@ -1,5 +1,4 @@
 package org.firstinspires.ftc.teamcode;
-
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
 import com.qualcomm.robotcore.hardware.DcMotorEx;
@@ -25,15 +24,15 @@ public class Autotest extends OpMode {
 
     @Override
     public void start() {
-        motor1.setVelocity(1);
-        motor2.setVelocity(1);
-        motor3.setVelocity(1);
-        motor4.setVelocity(1);
+        motor1.setPower(1);
+        motor2.setPower(-1);
+        motor3.setPower(1);
+        motor4.setPower(-1);
         //we alternate motor direction to
-        motor1.setTargetPosition(100); //we control how far the motors turn.
-        motor2.setTargetPosition(100);
-        motor3.setTargetPosition(100);
-        motor4.setTargetPosition(100);
+        motor1.setTargetPosition(400); //we control how far the motors turn.
+        motor2.setTargetPosition(400);
+        motor3.setTargetPosition(400);
+        motor4.setTargetPosition(400);
 
 
     }
