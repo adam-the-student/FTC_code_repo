@@ -27,6 +27,7 @@ public class encodertest extends LinearOpMode {
         motor2.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         motor3.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
         motor4.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        /** not working rn i think*/
         motor1.setPower(2);
         motor2.setPower(2);
         motor3.setPower(2);
@@ -37,5 +38,4 @@ public class encodertest extends LinearOpMode {
         motor4.setTargetPosition(1400);
 
     }
-//hardware maping
 }
