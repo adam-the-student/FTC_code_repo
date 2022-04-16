@@ -4,7 +4,7 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 
-@TeleOp(name = "MOVE new", group = "teleop")
+@TeleOp(name = "Controller Teleop", group = "teleop")
 
 public class MOVE extends LinearOpMode {
     private DcMotor motor1;
@@ -49,7 +49,13 @@ public class MOVE extends LinearOpMode {
                 motor3.setPower(motor3Power);  // motor3 is bottom left
                 motor4.setPower(-motor4Power);  // motor4 is bottom right
                 telemetry.update();
-            }
+                if(gamepad1.circle){
+                    motor1.setPower(motor1Power - 0.5);  // motor1 is top left
+                    motor2.setPower(-motor2Power + 0.5);  // motor2 is top right
+                    motor3.setPower(motor3Power - 0.5);  // motor3 is bottom left
+                    motor4.setPower(-motor4Power + 0.5);
+                }
+            };
         }
     }
 }
