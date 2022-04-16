@@ -45,10 +45,10 @@ public class MOVE extends LinearOpMode {
                 double motor4Power = (y + x -  rx) / denominator;  //motor4 is bottom right corner
 
                 if(gamepad1.circle){
-                    motor1.setPower(motor1Power / 2);  // motor1 is top left
-                    motor2.setPower(-motor2Power / 2);  // motor2 is top right
-                    motor3.setPower(motor3Power / 2);  // motor3 is bottom left
-                    motor4.setPower(-motor4Power / 2);  // motor4 is bottom right
+                    motor1.setPower(motor1Power / 3);  // motor1 is top left
+                    motor2.setPower(-motor2Power / 3);  // motor2 is top right
+                    motor3.setPower(motor3Power / 3);  // motor3 is bottom left
+                    motor4.setPower(-motor4Power / 3);  // motor4 is bottom right
                 }
                 else{
                     motor1.setPower(motor1Power);  // motor1 is top left
