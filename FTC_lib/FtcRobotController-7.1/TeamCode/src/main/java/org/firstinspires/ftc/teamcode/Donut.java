@@ -36,8 +36,9 @@ public class Donut extends LinearOpMode {
                 // if the x(a) button is pressed then we do backward donuts.
                 if(gamepad1.a){
                     //set power for three motors to do donuts
-                    motor1.setPower(1.5);
-                    motor3.setPower(1.5);
+                    motor1.setPower(1.4);
+                    motor2.setPower(1.5);
+                    motor3.setPower(1.4);
                     motor4.setPower(1.5);
                 }
 
@@ -45,8 +46,9 @@ public class Donut extends LinearOpMode {
                 if (gamepad1.b){
                     //set power for three motors to do donuts
                     motor1.setPower(-1.5);
+                    motor2.setPower(-1.4);
                     motor3.setPower(-1.5);
-                    motor4.setPower(-1.5);
+                    motor4.setPower(-1.4);
                 }
 
 
