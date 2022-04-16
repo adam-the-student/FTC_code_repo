@@ -39,10 +39,10 @@ public class MOVE extends LinearOpMode {
                  This ensures all the powers maintain the same ratio, but only when
                  at least one is out of the range [-1, 1]                   */
                 double denominator = Math.max(Math.abs(y) + Math.abs(x) + Math.abs(rx), 1);
-                double motor1Power = (y + x -  rx) / denominator;  //motor1 is top left corner
-                double motor2Power = (y - x + rx) / denominator;  //motor2 is top right corner
+                double motor1Power = (y + x +  rx) / denominator;  //motor1 is top left corner
+                double motor2Power = (y - x - rx) / denominator;  //motor2 is top right corner
                 double motor3Power = (y - x + rx) / denominator;  //motor3 is bottom left corner
-                double motor4Power = (y + x +  rx) / denominator;  //motor4 is bottom right corner
+                double motor4Power = (y + x -  rx) / denominator;  //motor4 is bottom right corner
 
                 if(gamepad1.circle) {
                     while(true){
@@ -52,7 +52,7 @@ public class MOVE extends LinearOpMode {
                         motor4.setPower(-motor4Power / 2);
 
                         if(gamepad1.circle){
-                            break;;
+                            break;
                         }
                     }
                 }
