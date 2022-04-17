@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8737e26c-f4fb-44df-a4b5-9a7233510fd1" name="Default Changelist" comment="trial and error">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_9_2022_1_38_PM__Default_Changelist_.xml" beforeDir="false" />
+    <list default="true" id="8737e26c-f4fb-44df-a4b5-9a7233510fd1" name="Default Changelist" comment="Cleanup code">
+      <change afterPath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/ActuatorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_9_22__2_25_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_9_22__2_25_PM__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_9_22__2_50_PM__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_4_9_22__2_50_PM__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/encodertest.java" beforeDir="false" afterPath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/encodertest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
