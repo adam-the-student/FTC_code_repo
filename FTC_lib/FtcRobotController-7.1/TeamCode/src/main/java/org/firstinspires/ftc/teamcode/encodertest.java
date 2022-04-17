@@ -20,12 +20,14 @@ public class encodertest extends LinearOpMode {
         motor2 = hardwareMap.dcMotor.get("motor2");
         motor3 = hardwareMap.dcMotor.get("motor3");
         motor4 = hardwareMap.dcMotor.get("motor4");
+
+        waitForStart();
+
         motor1.setmode(DcMotorController.RunMode.RUN_USING_ENCODERS);
         motor2.setmode(DcMotorController.RunMode.RUN_USING_ENCODERS);
         motor3.setmode(DcMotorController.RunMode.RUN_USING_ENCODERS);
         motor4.setmode(DcMotorController.RunMode.RUN_USING_ENCODERS);
 
-        waitForStart();
         drive(-0.5,0.5,-0.5,0.5,1440);
         drive(-0.5,-0.5,-0.5,-0.5,1440);
         drive(0.5,-0.5,0.5,-0.5,1440);
