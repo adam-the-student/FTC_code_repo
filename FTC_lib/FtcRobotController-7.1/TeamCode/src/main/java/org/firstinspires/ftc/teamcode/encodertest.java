@@ -3,90 +3,72 @@ package org.firstinspires.ftc.teamcode;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
-import com.qualcomm.robotcore.hardware.DcMotorEx;
+
 @Autonomous(name = "encodertest", group = "Autonomous")
-
-
 
 public class encodertest extends LinearOpMode {
 
-    DcMotorEx motor1 = null;
-    DcMotorEx motor2 = null;
-    DcMotorEx motor3 = null;
-    DcMotorEx motor4 = null;
+    DcMotor motor1 = null;
+    DcMotor motor2 = null;
+    DcMotor motor3 = null;
+    DcMotor motor4 = null;
 
     @Override
     public void runOpMode() throws InterruptedException {
 
-        motor1 = hardwareMap.get(DcMotorEx.class, "motor1");
-        motor2 = hardwareMap.get(DcMotorEx.class, "motor2");
-        motor3 = hardwareMap.get(DcMotorEx.class, "motor3");
-        motor4 = hardwareMap.get(DcMotorEx.class, "motor4");
-        motor1.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
-        motor2.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
-        motor3.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
-        motor4.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
-        motor1.setMode(DcMotorEx.RunMode.STOP_AND_RESET_ENCODER);
-        motor2.setMode(DcMotorEx.RunMode.STOP_AND_RESET_ENCODER);
-        motor3.setMode(DcMotorEx.RunMode.STOP_AND_RESET_ENCODER);
-        motor4.setMode(DcMotorEx.RunMode.STOP_AND_RESET_ENCODER);
+        motor1 = hardwareMap.dcMotor.get("motor1");
+        motor2 = hardwareMap.dcMotor.get("motor2");
+        motor3 = hardwareMap.dcMotor.get("motor3");
+        motor4 = hardwareMap.dcMotor.get("motor4");
 
         waitForStart();
-        int power = 1440;
 
-        drive(-power, power, -power, power,0.1);
-        stopDriving();
-        sleep(1000);
-        drive(-power, -power, power, power,0.1);
-        sleep(1000);
-        stopDriving();
-        drive(power, -power, power, -power,0.1);
-        stopDriving();
-        sleep(1000);
-        drive(power, power, -power, -power,0.1);
-        stopDriving();
+        motor1.setmode(DcMotorController.RunMode.RUN_USING_ENCODERS);
+        motor2.setmode(DcMotorController.RunMode.RUN_USING_ENCODERS);
+        motor3.setmode(DcMotorController.RunMode.RUN_USING_ENCODERS);
+        motor4.setmode(DcMotorController.RunMode.RUN_USING_ENCODERS);
+
+        drive(-0.5,0.5,-0.5,0.5,1440);
+        drive(-0.5,-0.5,-0.5,-0.5,1440);
+        drive(0.5,-0.5,0.5,-0.5,1440);
+        drive(0.5,0.5,0.5,0.5,1440);
+
     }
+    public  void drive(int power1, int power2, int power3, int power4, int distance){
+        motor1.setmode(DcMotorController.RunMode.RESET_ENCODERS);
+        motor2.setmode(DcMotorController.RunMode.RESET_ENCODERS);
+        motor3.setmode(DcMotorController.RunMode.RESET_ENCODERS);
+        motor4.setmode(DcMotorController.RunMode.RESET_ENCODERS);
 
-    public void drive(int power1, int power2, int power3, int power4, double actualPower){
-        motor1.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
-        motor2.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
-        motor3.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
-        motor4.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
-        motor1.setMode(DcMotorEx.RunMode.STOP_AND_RESET_ENCODER);
-        motor2.setMode(DcMotorEx.RunMode.STOP_AND_RESET_ENCODER);
-        motor3.setMode(DcMotorEx.RunMode.STOP_AND_RESET_ENCODER);
-        motor4.setMode(DcMotorEx.RunMode.STOP_AND_RESET_ENCODER);
+        motor1.setTargetPosition(distance);
+        motor2.setTargetPosition(distance);
+        motor3.setTargetPosition(distance);
+        motor4.setTargetPosition(distance);
 
-        motor1.setTargetPosition(power1);
-        motor2.setTargetPosition(power2);
-        motor3.setTargetPosition(power3);
-        motor4.setTargetPosition(power4);
+        motor1.setmode(DcMotorController.RunMode.RUN_TO_POSITION);
+        motor2.setmode(DcMotorController.RunMode.RUN_TO_POSITION);
+        motor3.setmode(DcMotorController.RunMode.RUN_TO_POSITION);
+        motor4.setmode(DcMotorController.RunMode.RUN_TO_POSITION);
 
-        motor1.setMode(DcMotorEx.RunMode.RUN_TO_POSITION);
-        motor2.setMode(DcMotorEx.RunMode.RUN_TO_POSITION);
-        motor3.setMode(DcMotorEx.RunMode.RUN_TO_POSITION);
-        motor4.setMode(DcMotorEx.RunMode.RUN_TO_POSITION);
-
-        motor1.setPower(actualPower);
-        motor2.setPower(actualPower);
-        motor3.setPower(actualPower);
-        motor4.setPower(actualPower);
+        motor1.setPower(power1);
+        motor2.setPower(power2);
+        motor3.setPower(power3);
+        motor4.setPower(power4);
 
         while(motor1.isBusy() && motor2.isBusy() && motor3.isBusy() && motor4.isBusy()){
 
         }
         stopDriving();
-        motor1.setMode(DcMotorEx.RunMode.STOP_AND_RESET_ENCODER);
-        motor2.setMode(DcMotorEx.RunMode.STOP_AND_RESET_ENCODER);
-        motor3.setMode(DcMotorEx.RunMode.STOP_AND_RESET_ENCODER);
-        motor4.setMode(DcMotorEx.RunMode.STOP_AND_RESET_ENCODER);
+        motor1.setmode(DcMotorController.RunMode.RUN_USING_ENCODERS);
+        motor2.setmode(DcMotorController.RunMode.RUN_USING_ENCODERS);
+        motor3.setmode(DcMotorController.RunMode.RUN_USING_ENCODERS);
+        motor4.setmode(DcMotorController.RunMode.RUN_USING_ENCODERS);
     }
-    public void stopDriving(){
+    public  void stopDriving(){
         motor1.setPower(0);
         motor2.setPower(0);
         motor3.setPower(0);
         motor4.setPower(0);
-
     }
 
 }
