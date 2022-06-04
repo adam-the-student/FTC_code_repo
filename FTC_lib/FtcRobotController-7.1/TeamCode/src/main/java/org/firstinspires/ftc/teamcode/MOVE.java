@@ -57,10 +57,10 @@ public class MOVE extends LinearOpMode {
                     motor4.setPower(-motor4Power / 3);  // motor4 is bottom right
 
                 } else if (speedToggle == 2) {
-                    motor1.setPower(motor1Power / 6);  // motor1 is top left
-                    motor2.setPower(-motor2Power / 6);  // motor2 is top right
-                    motor3.setPower(motor3Power / 6);  // motor3 is bottom left
-                    motor4.setPower(-motor4Power / 6);  // motor4 is bottom right
+                    motor1.setPower(motor1Power * 2 / 3);  // motor1 is top left
+                    motor2.setPower(-motor2Power * 2  / 3);  // motor2 is top right
+                    motor3.setPower(motor3Power  * 2 / 3);  // motor3 is bottom left
+                    motor4.setPower(-motor4Power * 2 /3);  // motor4 is bottom right
 
                 }  else{
                     motor1.setPower(motor1Power);  // motor1 is top left
