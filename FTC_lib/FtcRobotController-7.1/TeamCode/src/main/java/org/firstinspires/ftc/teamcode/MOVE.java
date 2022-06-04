@@ -22,6 +22,7 @@ public class MOVE extends LinearOpMode {
         motor2 = hardwareMap.dcMotor.get("motor2");
         motor3 = hardwareMap.dcMotor.get("motor3");
         // Put initialization blocks here.
+        int speedToggle = 0;
         waitForStart();
 
         if (opModeIsActive()) {
@@ -33,7 +34,6 @@ public class MOVE extends LinearOpMode {
                 double y = gamepad1.left_stick_y;
                 double x = -gamepad1.left_stick_x * 1.15; // Counteract imperfect strafing
                 double rx = -gamepad1.right_stick_x;
-                int speedToggle = 0;
 
               /*Denominator is the largest motor power (absolute value) or 1
                  This ensures all the powers maintain the same ratio, but only when
