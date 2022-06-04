@@ -15,7 +15,6 @@ public class MOVE extends LinearOpMode {
     /**
      * This function is executed when this Op Mode is selected from the Driver Station.
      */
-
     @Override
     public void runOpMode() {
         motor1 = hardwareMap.dcMotor.get("motor1");
@@ -34,6 +33,7 @@ public class MOVE extends LinearOpMode {
                 double y = gamepad1.left_stick_y;
                 double x = -gamepad1.left_stick_x * 1.15; // Counteract imperfect strafing
                 double rx = -gamepad1.right_stick_x;
+                int speedToggle = 0;
 
               /*Denominator is the largest motor power (absolute value) or 1
                  This ensures all the powers maintain the same ratio, but only when
@@ -45,12 +45,24 @@ public class MOVE extends LinearOpMode {
                 double motor4Power = (y + x -  rx) / denominator;  //motor4 is bottom right corner
 
                 if(gamepad1.circle){
+                    speedToggle++;
+                    if(speedToggle==3){
+                        speedToggle = 0;
+                    }
+                }
+                if(speedToggle==1) {
                     motor1.setPower(motor1Power / 3);  // motor1 is top left
                     motor2.setPower(-motor2Power / 3);  // motor2 is top right
                     motor3.setPower(motor3Power / 3);  // motor3 is bottom left
                     motor4.setPower(-motor4Power / 3);  // motor4 is bottom right
-                }
-                else{
+
+                } else if (speedToggle == 2) {
+                    motor1.setPower(motor1Power / 6);  // motor1 is top left
+                    motor2.setPower(-motor2Power / 6);  // motor2 is top right
+                    motor3.setPower(motor3Power / 6);  // motor3 is bottom left
+                    motor4.setPower(-motor4Power / 6);  // motor4 is bottom right
+
+                }  else{
                     motor1.setPower(motor1Power);  // motor1 is top left
                     motor2.setPower(-motor2Power);  // motor2 is top right
                     motor3.setPower(motor3Power);  // motor3 is bottom left
