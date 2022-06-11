@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8737e26c-f4fb-44df-a4b5-9a7233510fd1" name="Default Changelist" comment="Add stuff - Fawwaz" />
+    <list default="true" id="8737e26c-f4fb-44df-a4b5-9a7233510fd1" name="Default Changelist" comment="Add telemetry updates for MOVE NEW - Fawwaz" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -246,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654967886930</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Add telemetry updates for MOVE NEW - Fawwaz">
+      <created>1654971682494</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1654971682494</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -279,6 +286,7 @@
     <MESSAGE value="Fix super speeeeeeeed  - Fawwaz" />
     <MESSAGE value=" super speeeeeeeed bumper - Fawwaz" />
     <MESSAGE value="Add stuff - Fawwaz" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add stuff - Fawwaz" />
+    <MESSAGE value="Add telemetry updates for MOVE NEW - Fawwaz" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add telemetry updates for MOVE NEW - Fawwaz" />
   </component>
 </project>
