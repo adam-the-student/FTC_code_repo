@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8737e26c-f4fb-44df-a4b5-9a7233510fd1" name="Default Changelist" comment=" super speeeeeeeed bumper - Fawwaz">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8737e26c-f4fb-44df-a4b5-9a7233510fd1" name="Default Changelist" comment="Add stuff - Fawwaz" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -241,7 +239,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654959140194</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Add stuff - Fawwaz">
+      <created>1654967886930</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1654967886930</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -273,6 +278,7 @@
     <MESSAGE value="Super Speeeeeeeeed - Fawwaz" />
     <MESSAGE value="Fix super speeeeeeeed  - Fawwaz" />
     <MESSAGE value=" super speeeeeeeed bumper - Fawwaz" />
-    <option name="LAST_COMMIT_MESSAGE" value=" super speeeeeeeed bumper - Fawwaz" />
+    <MESSAGE value="Add stuff - Fawwaz" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add stuff - Fawwaz" />
   </component>
 </project>

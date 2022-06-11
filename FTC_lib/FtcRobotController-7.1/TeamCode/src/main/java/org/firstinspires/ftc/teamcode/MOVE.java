@@ -51,29 +51,35 @@ public class MOVE extends LinearOpMode {
                     }
                 }
                 if(speedToggle==1) {
+                    telemetry.addData("Status" , "1/3 Speed");
+                    telemetry.update();
                     motor1.setPower(motor1Power / 3);  // motor1 is top left
                     motor2.setPower(-motor2Power / 3);  // motor2 is top right
                     motor3.setPower(motor3Power / 3);  // motor3 is bottom left
                     motor4.setPower(-motor4Power / 3);  // motor4 is bottom right
-
                 } else if (speedToggle == 2) {
+                    telemetry.addData("Status" , "2/3 Speed");
+                    telemetry.update();
                     motor1.setPower(motor1Power * 2 / 3);  // motor1 is top left
                     motor2.setPower(-motor2Power * 2  / 3);  // motor2 is top right
                     motor3.setPower(motor3Power  * 2 / 3);  // motor3 is bottom left
                     motor4.setPower(-motor4Power * 2 /3);  // motor4 is bottom right
-                } else {
+                } else if (speedToggle == 0) {
+                    telemetry.addData("Status" , "Regular Speed");
+                    telemetry.update();
                     motor1.setPower(motor1Power);  // motor1 is top left
                     motor2.setPower(-motor2Power);  // motor2 is top right
                     motor3.setPower(motor3Power);  // motor3 is bottom left
                     motor4.setPower(-motor4Power);  // motor4 is bottom right
                 }
                  if (gamepad1.left_bumper && gamepad1.right_bumper) {
+                     telemetry.addData("Status" , "Super Speeeeeeeeed");
+                     telemetry.update();
                     motor1.setPower(1.5 * motor1Power);  // motor1 is top left
                     motor2.setPower(-1.5 * motor2Power);  // motor2 is top right
                     motor3.setPower(1.5 * motor3Power);  // motor3 is bottom left
                     motor4.setPower(-1.5 * motor4Power );  // motor4 is bottom right
                 }
-
                 telemetry.update();
             }
         }
