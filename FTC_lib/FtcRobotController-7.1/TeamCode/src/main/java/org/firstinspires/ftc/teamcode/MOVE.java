@@ -46,7 +46,7 @@ public class MOVE extends LinearOpMode {
 
                 if(gamepad1.circle){
                     speedToggle++;
-                    if(speedToggle==4){
+                    if(speedToggle==3){
                         speedToggle = 0;
                     }
                 }
@@ -61,17 +61,19 @@ public class MOVE extends LinearOpMode {
                     motor2.setPower(-motor2Power * 2  / 3);  // motor2 is top right
                     motor3.setPower(motor3Power  * 2 / 3);  // motor3 is bottom left
                     motor4.setPower(-motor4Power * 2 /3);  // motor4 is bottom right
-                }  else if (speedToggle == 3) {
-                    motor1.setPower(1.5 * motor1Power);  // motor1 is top left
-                    motor2.setPower(-1.5 * motor2Power);  // motor2 is top right
-                    motor3.setPower(1.5 * motor3Power);  // motor3 is bottom left
-                    motor4.setPower(-1.5 * motor4Power );  // motor4 is bottom right
                 } else {
                     motor1.setPower(motor1Power);  // motor1 is top left
                     motor2.setPower(-motor2Power);  // motor2 is top right
                     motor3.setPower(motor3Power);  // motor3 is bottom left
                     motor4.setPower(-motor4Power);  // motor4 is bottom right
                 }
+                 if (gamepad1.left_bumper && gamepad1.right_bumper) {
+                    motor1.setPower(1.5 * motor1Power);  // motor1 is top left
+                    motor2.setPower(-1.5 * motor2Power);  // motor2 is top right
+                    motor3.setPower(1.5 * motor3Power);  // motor3 is bottom left
+                    motor4.setPower(-1.5 * motor4Power );  // motor4 is bottom right
+                }
+
                 telemetry.update();
             }
         }
