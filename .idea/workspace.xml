@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8737e26c-f4fb-44df-a4b5-9a7233510fd1" name="Default Changelist" comment="Add telemetry updates for MOVE NEW - Fawwaz">
-      <change afterPath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/NorthSummerCupFreightFrenzy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8737e26c-f4fb-44df-a4b5-9a7233510fd1" name="Default Changelist" comment="Make new class for freight frenzy north summer cup and add the Move program to it. - Fawwaz" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -263,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654971725802</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Make new class for freight frenzy north summer cup and add the Move program to it. - Fawwaz">
+      <created>1657571188187</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1657571188187</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -297,6 +301,7 @@
     <MESSAGE value=" super speeeeeeeed bumper - Fawwaz" />
     <MESSAGE value="Add stuff - Fawwaz" />
     <MESSAGE value="Add telemetry updates for MOVE NEW - Fawwaz" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add telemetry updates for MOVE NEW - Fawwaz" />
+    <MESSAGE value="Make new class for freight frenzy north summer cup and add the Move program to it. - Fawwaz" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make new class for freight frenzy north summer cup and add the Move program to it. - Fawwaz" />
   </component>
 </project>
