@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8737e26c-f4fb-44df-a4b5-9a7233510fd1" name="Default Changelist" comment="Add telemetry updates for MOVE NEW - Fawwaz" />
+    <list default="true" id="8737e26c-f4fb-44df-a4b5-9a7233510fd1" name="Default Changelist" comment="Add telemetry updates for MOVE NEW - Fawwaz">
+      <change afterPath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/NorthSummerCupFreightFrenzy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +33,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
     <property name="cidr.known.project.marker" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/Autotest.java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
@@ -253,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654971682494</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Add telemetry updates for MOVE NEW - Fawwaz">
+      <created>1654971725802</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1654971725802</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
