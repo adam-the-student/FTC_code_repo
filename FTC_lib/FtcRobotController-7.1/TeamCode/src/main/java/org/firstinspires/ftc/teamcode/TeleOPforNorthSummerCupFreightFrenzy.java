@@ -6,7 +6,7 @@ import com.qualcomm.robotcore.hardware.DcMotor;
 
 @TeleOp(name = "Freight Frenzy teleOP", group = "teleop")
 
-public class NorthSummerCupFreightFrenzy extends LinearOpMode {
+public class TeleOPforNorthSummerCupFreightFrenzy extends LinearOpMode {
     private DcMotor motor1;
     private DcMotor motor4;
     private DcMotor motor2;
@@ -40,6 +40,7 @@ public class NorthSummerCupFreightFrenzy extends LinearOpMode {
                     motor2.setPower(-motor2Power);  // motor2 is top right
                     motor3.setPower(motor3Power);  // motor3 is bottom left
                     motor4.setPower(-motor4Power);  // motor4 is bottom right
+
 
                 telemetry.update();
             }
