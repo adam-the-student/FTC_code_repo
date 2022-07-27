@@ -5,8 +5,6 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotorEx;
 @Autonomous(name = "encodertest", group = "Autonomous")
 
-
-
 public class encodertest extends LinearOpMode {
 
     DcMotorEx motor1 = null;
@@ -71,21 +69,19 @@ public class encodertest extends LinearOpMode {
         motor3.setPower(actualPower);
         motor4.setPower(actualPower);
 
-        while(motor1.isBusy() && motor2.isBusy() && motor3.isBusy() && motor4.isBusy()){
-
-        }
+        while(motor1.isBusy() && motor2.isBusy() && motor3.isBusy() && motor4.isBusy()){ }
         stopDriving();
         motor1.setMode(DcMotorEx.RunMode.STOP_AND_RESET_ENCODER);
         motor2.setMode(DcMotorEx.RunMode.STOP_AND_RESET_ENCODER);
         motor3.setMode(DcMotorEx.RunMode.STOP_AND_RESET_ENCODER);
         motor4.setMode(DcMotorEx.RunMode.STOP_AND_RESET_ENCODER);
     }
+
     public void stopDriving(){
         motor1.setPower(0);
         motor2.setPower(0);
         motor3.setPower(0);
         motor4.setPower(0);
-
     }
 
 }
