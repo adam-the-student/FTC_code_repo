@@ -3,64 +3,72 @@ package org.firstinspires.ftc.teamcode;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotorEx;
+import com.qaulcomm.robotcore.hardware.CRServo;
 
 @Autonomous(name = "Auto_Duck_Blue", group = "Autonomous")
 
 public class  AutoDuckBlueNSCFreightFrenzy extends LinearOpMode {
-    DcMotorEx motor1;
-    DcMotorEx motor2;
-    DcMotorEx motor3;
-    DcMotorEx motor4;
+    DcMotorEx frontLeftWheel;
+    DcMotorEx frontRightWheel;
+    DcMotorEx backLeftWheel;
+    DcMotorEx backRightWheel;
+    CRServo duckServo;
+
 
     @Override
     public void runOpMode() throws InterruptedException{
-        motor1 = hardwareMap.get(DcMotorEx.class, "motor1");
-        motor2 = hardwareMap.get(DcMotorEx.class, "motor2");
-        motor3 = hardwareMap.get(DcMotorEx.class, "motor3");
-        motor4 = hardwareMap.get(DcMotorEx.class, "motor4");
-        motor1.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
-        motor2.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
-        motor3.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
-        motor4.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
+        frontLeftWheel = hardwareMap.get(DcMotorEx.class, "motor1");
+        frontRightWheel = hardwareMap.get(DcMotorEx.class, "motor2");
+        backLeftWheel = hardwareMap.get(DcMotorEx.class, "motor3");
+        backRightWheel = hardwareMap.get(DcMotorEx.class, "motor4");
+        hardwareMap.get(CRServo.class, "duckServo");
+        frontLeftWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
+        frontRightWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
+        backLeftWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
+        backRightWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
 
         waitForStart();
 
         if (/*camera code for duck on left*/){
-            // 2 rotaitions to the left
+            // 2 feet to the left
             moveLeftOrRight(3240, -0.25);
         }
         if (/*camera code for duck in the center*/){
-            // 2 rotaitions to the left
+            // 2 feet to the left
             moveLeftOrRight(3240, -0.25);
 
         }
         if (/*camera code for duck on right*/){
-            // 2 rotaitions to the left
+            // 2 feet to the left
             moveLeftOrRight(3240, -0.25);
 
         }
+        moveLeftOrRight(6840,0.25);
+        duckServo.setPower(0.75);
+        sleep(1000);
+
     }
 
     public void moveLeftOrRight(int distance, int power) {
-        motor1.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
-        motor2.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
-        motor3.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
-        motor4.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
+        frontLeftWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
+        frontRightWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
+        backLeftWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
+        backRightWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
 
-        motor1.setTargetPosition(distance);
-        motor2.setTargetPosition(distance);
-        motor3.setTargetPosition(distance);
-        motor4.setTargetPosition(distance);
+        frontLeftWheel.setTargetPosition(distance);
+        frontRightWheel.setTargetPosition(distance);
+        backLeftWheel.setTargetPosition(distance);
+        backRightWheel.setTargetPosition(distance);
 
-        motor1.setMode(DcMotorEx.RunMode.RUN_TO_POSITION);
-        motor2.setMode(DcMotorEx.RunMode.RUN_TO_POSITION);
-        motor3.setMode(DcMotorEx.RunMode.RUN_TO_POSITION);
-        motor4.setMode(DcMotorEx.RunMode.RUN_TO_POSITION);
+        frontLeftWheel.setMode(DcMotorEx.RunMode.RUN_TO_POSITION);
+        frontRightWheel.setMode(DcMotorEx.RunMode.RUN_TO_POSITION);
+        backLeftWheel.setMode(DcMotorEx.RunMode.RUN_TO_POSITION);
+        backRightWheel.setMode(DcMotorEx.RunMode.RUN_TO_POSITION);
 
-        motor1.setPower(power);
-        motor2.setPower(power);
-        motor3.setPower(power);
-        motor4.setPower(power);
+        frontLeftWheel.setPower(power);
+        frontRightWheel.setPower(power);
+        backLeftWheel.setPower(power);
+        backRightWheel.setPower(power);
 
         while(motor1.isBusy() && motor2.isBusy() && motor3.isBusy() && motor4.isBusy()){}
     }
