@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8737e26c-f4fb-44df-a4b5-9a7233510fd1" name="Default Changelist" comment="Write flow chart for autonomous, and make TeleOPforNorthSummerCupFreightFrenzy class - Fawwaz">
+    <list default="true" id="8737e26c-f4fb-44df-a4b5-9a7233510fd1" name="Default Changelist" comment="Code distance and duck for blue side autonomous - Fawwaz">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RamadanRover.java" beforeDir="false" afterPath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/RamadanRover.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/AutoDuckandParkBlue.java" beforeDir="false" afterPath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/AutoDuckandParkBlue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -306,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658861613482</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Code distance and duck for blue side autonomous - Fawwaz">
+      <created>1658895947547</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1658895947547</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -344,6 +351,7 @@
     <MESSAGE value="Update README.md - Fawwaz" />
     <MESSAGE value="Clean Up Code - Fawwaz" />
     <MESSAGE value="Write flow chart for autonomous, and make TeleOPforNorthSummerCupFreightFrenzy class - Fawwaz" />
-    <option name="LAST_COMMIT_MESSAGE" value="Write flow chart for autonomous, and make TeleOPforNorthSummerCupFreightFrenzy class - Fawwaz" />
+    <MESSAGE value="Code distance and duck for blue side autonomous - Fawwaz" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code distance and duck for blue side autonomous - Fawwaz" />
   </component>
 </project>

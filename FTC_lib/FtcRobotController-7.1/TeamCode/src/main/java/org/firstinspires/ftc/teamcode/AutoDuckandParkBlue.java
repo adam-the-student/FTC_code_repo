@@ -31,21 +31,25 @@ public class  AutoDuckBlueNSCFreightFrenzy extends LinearOpMode {
 
         if (/*camera code for duck on left*/){
             // 2 feet to the left
-            moveLeftOrRight(3240, -0.25);
+            moveLeftOrRight(3240, 0.25);
         }
         if (/*camera code for duck in the center*/){
             // 2 feet to the left
-            moveLeftOrRight(3240, -0.25);
+            moveLeftOrRight(3240, 0.25);
 
         }
         if (/*camera code for duck on right*/){
             // 2 feet to the left
-            moveLeftOrRight(3240, -0.25);
+            moveLeftOrRight(3240, 0.25);
 
         }
-        moveLeftOrRight(6840,0.25);
+        moveLeftOrRight(-6000,0.25);
+        moveForwardOrBack(2880,0.25);
+        moveLeftOrRight(1580,0.25);
+        moveForwardOrBack(2100,0.25);
         duckServo.setPower(0.75);
         sleep(1000);
+        moveForwardOrBack(2800,0.25);
 
     }
 
@@ -57,7 +61,30 @@ public class  AutoDuckBlueNSCFreightFrenzy extends LinearOpMode {
 
         frontLeftWheel.setTargetPosition(distance);
         frontRightWheel.setTargetPosition(distance);
-        backLeftWheel.setTargetPosition(distance);
+        backLeftWheel.setTargetPosition(-distance);
+        backRightWheel.setTargetPosition(-distance);
+
+        frontLeftWheel.setMode(DcMotorEx.RunMode.RUN_TO_POSITION);
+        frontRightWheel.setMode(DcMotorEx.RunMode.RUN_TO_POSITION);
+        backLeftWheel.setMode(DcMotorEx.RunMode.RUN_TO_POSITION);
+        backRightWheel.setMode(DcMotorEx.RunMode.RUN_TO_POSITION);
+
+        frontLeftWheel.setPower(power);
+        frontRightWheel.setPower(power);
+        backLeftWheel.setPower(power);
+        backRightWheel.setPower(power);
+
+        while(motor1.isBusy() && motor2.isBusy() && motor3.isBusy() && motor4.isBusy()){}
+    }
+    public void moveForwardOrBack(int distance, int power) {
+        frontLeftWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
+        frontRightWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
+        backLeftWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
+        backRightWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
+
+        frontLeftWheel.setTargetPosition(-distance);
+        frontRightWheel.setTargetPosition(distance);
+        backLeftWheel.setTargetPosition(-distance);
         backRightWheel.setTargetPosition(distance);
 
         frontLeftWheel.setMode(DcMotorEx.RunMode.RUN_TO_POSITION);
