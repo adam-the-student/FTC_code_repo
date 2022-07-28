@@ -3,7 +3,7 @@ package org.firstinspires.ftc.teamcode;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotorEx;
-import com.qaulcomm.robotcore.hardware.CRServo;
+//import com.qaulcomm.robotcore.hardware.CRServo;
 
 @Autonomous(name = "Auto_Duck_Blue", group = "Autonomous")
 
@@ -12,7 +12,7 @@ public class  AutoDuckBlueNSCFreightFrenzy extends LinearOpMode {
     DcMotorEx frontRightWheel;
     DcMotorEx backLeftWheel;
     DcMotorEx backRightWheel;
-    CRServo duckServo;
+    //CRServo duckServo;
 
 
     @Override
@@ -21,7 +21,7 @@ public class  AutoDuckBlueNSCFreightFrenzy extends LinearOpMode {
         frontRightWheel = hardwareMap.get(DcMotorEx.class, "motor2");
         backLeftWheel = hardwareMap.get(DcMotorEx.class, "motor3");
         backRightWheel = hardwareMap.get(DcMotorEx.class, "motor4");
-        hardwareMap.get(CRServo.class, "duckServo");
+        //hardwareMap.get(CRServo.class, "duckServo");
         frontLeftWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
         frontRightWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
         backLeftWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
@@ -47,13 +47,13 @@ public class  AutoDuckBlueNSCFreightFrenzy extends LinearOpMode {
         moveForwardOrBack(2880,0.25);
         moveLeftOrRight(1580,0.25);
         moveForwardOrBack(2100,0.25);
-        duckServo.setPower(0.75);
+        //duckServo.setPower(0.75);
         sleep(1000);
         moveForwardOrBack(2800,0.25);
 
     }
 
-    public void moveLeftOrRight(int distance, int power) {
+    public void moveLeftOrRight(int distance, double power) {
         frontLeftWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
         frontRightWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
         backLeftWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
@@ -76,7 +76,7 @@ public class  AutoDuckBlueNSCFreightFrenzy extends LinearOpMode {
 
         while(motor1.isBusy() && motor2.isBusy() && motor3.isBusy() && motor4.isBusy()){}
     }
-    public void moveForwardOrBack(int distance, int power) {
+    public void moveForwardOrBack(int distance, double power) {
         frontLeftWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
         frontRightWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
         backLeftWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
