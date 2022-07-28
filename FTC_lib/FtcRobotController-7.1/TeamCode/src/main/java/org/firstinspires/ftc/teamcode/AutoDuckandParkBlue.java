@@ -14,7 +14,6 @@ public class  AutoDuckBlueNSCFreightFrenzy extends LinearOpMode {
     DcMotorEx backRightWheel;
     //CRServo duckServo;
 
-
     @Override
     public void runOpMode() throws InterruptedException{
         frontLeftWheel = hardwareMap.get(DcMotorEx.class, "motor1");
@@ -36,7 +35,6 @@ public class  AutoDuckBlueNSCFreightFrenzy extends LinearOpMode {
         if (/*camera code for duck in the center*/){
             // 2 feet to the left
             moveLeftOrRight(3240, 0.25);
-
         }
         if (/*camera code for duck on right*/){
             // 2 feet to the left
