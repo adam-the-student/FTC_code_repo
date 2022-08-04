@@ -11,6 +11,7 @@ public class TeleOPforNorthSummerCupFreightFrenzy extends LinearOpMode {
     private DcMotor motor4;
     private DcMotor motor2;
     private DcMotor motor3;
+    private DcMotor turret_motor;
 
     /**
      * This function is executed when this Op Mode is selected from the Driver Station.
@@ -18,9 +19,10 @@ public class TeleOPforNorthSummerCupFreightFrenzy extends LinearOpMode {
     @Override
     public void runOpMode() {
         motor1 = hardwareMap.dcMotor.get("motor1");
-        motor4 = hardwareMap.dcMotor.get("motor4");
         motor2 = hardwareMap.dcMotor.get("motor2");
         motor3 = hardwareMap.dcMotor.get("motor3");
+        motor4 = hardwareMap.dcMotor.get("motor4");
+        turret_motor = hardwareMap.dcMotor.get("armMotor1");
 
         waitForStart();
         if (opModeIsActive()) {
@@ -41,6 +43,12 @@ public class TeleOPforNorthSummerCupFreightFrenzy extends LinearOpMode {
                     motor3.setPower(motor3Power);  // motor3 is bottom left
                     motor4.setPower(-motor4Power);  // motor4 is bottom right
 
+                // gamepad 2 starts
+                double Turret = gamepad2.right_stick_x;
+//                double Arm = gamepad2.left_sticky;
+                turret_motor.setpower(Turret);
+//                Arm_motor.setpower(Arm);
+                telemetry.addData("Turret and arm are moving");
 
                 telemetry.update();
             }
