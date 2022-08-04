@@ -12,7 +12,6 @@ public class TeleOPforNorthSummerCupFreightFrenzy extends LinearOpMode {
     private DcMotor motor2;
     private DcMotor motor3;
     private DcMotor turret_motor;
-
     /**
      * This function is executed when this Op Mode is selected from the Driver Station.
      */
