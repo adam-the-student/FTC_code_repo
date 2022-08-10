@@ -32,13 +32,13 @@ public class YellowFlag extends LinearOpMode {
             telemetry.update();
             if(color1.red()>=90 && color1.red()<=130 && color1.green() >= 100 && color1.green() <= 160 && color1.blue() >= 65 && color1.blue() <= 100){
             
-            frontLeftWheel.setPower(5.0);
+            frontLeftWheel.setPower(-5.0);
             sleep(100);
             frontRightWheel.setPower(5.0);
             sleep(100);
             backLeftWheel.setPower(5.0);
             sleep(100);
-            backRightWheel.setPower(5.0);
+            backRightWheel.setPower(-5.0);
             sleep(100);
             
               telemetry.update();
