@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8737e26c-f4fb-44df-a4b5-9a7233510fd1" name="Default Changelist" comment="Clean Up Code - Fawwaz">
+    <list default="true" id="8737e26c-f4fb-44df-a4b5-9a7233510fd1" name="Default Changelist" comment="Add Turret control version1 - Fawwaz">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/TeleOPforNorthSummerCupFreightFrenzy.java" beforeDir="false" afterPath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/TeleOPforNorthSummerCupFreightFrenzy.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -341,7 +340,21 @@
       <option name="project" value="LOCAL" />
       <updated>1658967940481</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Add Turret control version1 - Fawwaz">
+      <created>1659574179088</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1659574179088</updated>
+    </task>
+    <task id="LOCAL-00034" summary="Add Turret control version1 - Fawwaz">
+      <created>1659574201509</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1659574201509</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -381,6 +394,7 @@
     <MESSAGE value="Code distance and duck for blue side autonomous - Fawwaz" />
     <MESSAGE value="Make a Testable Code - Fawwaz" />
     <MESSAGE value="Clean Up Code - Fawwaz" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clean Up Code - Fawwaz" />
+    <MESSAGE value="Add Turret control version1 - Fawwaz" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add Turret control version1 - Fawwaz" />
   </component>
 </project>
