@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8737e26c-f4fb-44df-a4b5-9a7233510fd1" name="Default Changelist" comment="Add Turret control version1 - Fawwaz">
+    <list default="true" id="8737e26c-f4fb-44df-a4b5-9a7233510fd1" name="Default Changelist" comment="Add YellowFlag.java - Fawwaz">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/AutoDuckandParkBlue.java" beforeDir="false" afterPath="$PROJECT_DIR$/FTC_lib/FtcRobotController-7.1/TeamCode/src/main/java/org/firstinspires/ftc/teamcode/AutoDuckandParkBlue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +64,8 @@
       <option name="MODE" value="default_activity" />
       <option name="CLEAR_LOGCAT" value="false" />
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
       <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
       <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
       <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
@@ -352,7 +355,28 @@
       <option name="project" value="LOCAL" />
       <updated>1659574201509</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Add YellowFlag.java - Fawwaz">
+      <created>1660094361638</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1660094361638</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Add YellowFlag.java - Fawwaz">
+      <created>1660094397259</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1660094397259</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Add YellowFlag.java - Fawwaz">
+      <created>1660094422986</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1660094422986</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -368,7 +392,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="put my name on the README" />
     <MESSAGE value="Debug Autotest.java" />
     <MESSAGE value=" counter strafing in MOVE NEW. - Fawwaz" />
     <MESSAGE value=" last counter strafing in MOVE NEW. - Fawwaz" />
@@ -393,6 +416,7 @@
     <MESSAGE value="Make a Testable Code - Fawwaz" />
     <MESSAGE value="Clean Up Code - Fawwaz" />
     <MESSAGE value="Add Turret control version1 - Fawwaz" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Turret control version1 - Fawwaz" />
+    <MESSAGE value="Add YellowFlag.java - Fawwaz" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add YellowFlag.java - Fawwaz" />
   </component>
 </project>

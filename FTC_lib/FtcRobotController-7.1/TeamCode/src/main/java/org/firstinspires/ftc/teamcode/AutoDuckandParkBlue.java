@@ -52,10 +52,6 @@ public class  AutoDuckBlueNSCFreightFrenzy extends LinearOpMode {
     }
 
     public void moveLeftOrRight(int distance, double power) {
-        frontLeftWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
-        frontRightWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
-        backLeftWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
-        backRightWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
 
         frontLeftWheel.setTargetPosition(distance);
         frontRightWheel.setTargetPosition(distance);
@@ -72,13 +68,9 @@ public class  AutoDuckBlueNSCFreightFrenzy extends LinearOpMode {
         backLeftWheel.setPower(power);
         backRightWheel.setPower(power);
 
-        while(motor1.isBusy() && motor2.isBusy() && motor3.isBusy() && motor4.isBusy()){}
+        while(motor1.isBusy() && motor2.isBusy() && motor3.isBusy() && motor4.isBusy()){} stopMotor();
     }
     public void moveForwardOrBack(int distance, double power) {
-        frontLeftWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
-        frontRightWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
-        backLeftWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
-        backRightWheel.setMode(DcMotorEx.RunMode.RUN_USING_ENCODER);
 
         frontLeftWheel.setTargetPosition(-distance);
         frontRightWheel.setTargetPosition(distance);
@@ -95,6 +87,12 @@ public class  AutoDuckBlueNSCFreightFrenzy extends LinearOpMode {
         backLeftWheel.setPower(power);
         backRightWheel.setPower(power);
 
-        while(motor1.isBusy() && motor2.isBusy() && motor3.isBusy() && motor4.isBusy()){}
+        while(motor1.isBusy() && motor2.isBusy() && motor3.isBusy() && motor4.isBusy()){} stopMotor();
+    }
+    public void stopMotor(){
+        frontLeftWheel.setPower(0);
+        frontRightWheel.setPower(0);
+        backLeftWheel.setPower(0);
+        backRightWheel.setPower(0);
     }
 }
