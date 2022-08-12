@@ -7,7 +7,7 @@ import com.qualcomm.robotcore.hardware.DcMotorEx;
 
 @Autonomous(name = "Auto_Duck_Blue", group = "Autonomous")
 
-public class  AutoDuckBlueNSCFreightFrenzy extends LinearOpMode {
+public class  AutoDuckandParkBlue extends LinearOpMode {
     DcMotorEx frontLeftWheel;
     DcMotorEx frontRightWheel;
     DcMotorEx backLeftWheel;
@@ -28,19 +28,6 @@ public class  AutoDuckBlueNSCFreightFrenzy extends LinearOpMode {
 
         waitForStart();
 
-        if (/*camera code for duck on left*/){
-            // 2 feet to the left
-            moveLeftOrRight(3240, 0.25);
-        }
-        if (/*camera code for duck in the center*/){
-            // 2 feet to the left
-            moveLeftOrRight(3240, 0.25);
-        }
-        if (/*camera code for duck on right*/){
-            // 2 feet to the left
-            moveLeftOrRight(3240, 0.25);
-
-        }
         moveLeftOrRight(-6000,0.25);
         moveForwardOrBack(2880,0.25);
         moveLeftOrRight(1580,0.25);
@@ -68,7 +55,7 @@ public class  AutoDuckBlueNSCFreightFrenzy extends LinearOpMode {
         backLeftWheel.setPower(power);
         backRightWheel.setPower(power);
 
-        while(motor1.isBusy() && motor2.isBusy() && motor3.isBusy() && motor4.isBusy()){} stopMotor();
+        while(frontLeftWheel.isBusy() && frontRightWheel.isBusy() && backLeftWheel.isBusy() && backRightWheel.isBusy()){} stopMotor();
     }
     public void moveForwardOrBack(int distance, double power) {
 
@@ -87,7 +74,7 @@ public class  AutoDuckBlueNSCFreightFrenzy extends LinearOpMode {
         backLeftWheel.setPower(power);
         backRightWheel.setPower(power);
 
-        while(motor1.isBusy() && motor2.isBusy() && motor3.isBusy() && motor4.isBusy()){} stopMotor();
+        while(frontLeftWheel.isBusy() && frontRightWheel.isBusy() && backLeftWheel.isBusy() && backRightWheel.isBusy()){} stopMotor();
     }
     public void stopMotor(){
         frontLeftWheel.setPower(0);

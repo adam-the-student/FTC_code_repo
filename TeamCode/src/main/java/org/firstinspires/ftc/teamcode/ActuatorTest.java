@@ -5,7 +5,7 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.Servo;
 
 @TeleOp(name = "extend ")
-public class extend1 extends LinearOpMode {
+public class ActuatorTest extends LinearOpMode {
 
     private Servo linearServo0;
 
@@ -19,9 +19,6 @@ public class extend1 extends LinearOpMode {
         // Set servo to mid position
         waitForStart();
         while (opModeIsActive()) {
-            if (linearServo0.getPosition !=  0 && linearServo0 != 1) {
-                linearServo0.setPosition(gamepad1.left_stick_x);
-            }
         }
     }
 }
