@@ -6,4 +6,4 @@ This is the repository for the marvels of irving.
 
 > **Make multiple autonomous program for Summer Cup**
 
-> **Make teleop for Summer Cup**
+> ~~**Make teleop for Summer Cup**~~
