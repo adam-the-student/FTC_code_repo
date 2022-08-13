@@ -45,9 +45,9 @@ public class TeleOPforNorthSummerCupFreightFrenzy extends LinearOpMode {
                 // gamepad 2 starts
                 double Turret = gamepad2.right_stick_x;
 //                double Arm = gamepad2.left_sticky;
-                turret_motor.setpower(Turret);
+                turret_motor.setPower(Turret);
 //                Arm_motor.setpower(Arm);
-                telemetry.addData("Turret and arm are moving");
+                telemetry.addData("Status","Turret and arm are moving");
 
                 telemetry.update();
             }
