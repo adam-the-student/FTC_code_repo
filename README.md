@@ -1,23 +1,8 @@
-WELCOME TO THE 
-(MARVALS ASCII ART)
+WELCOME TO THE Marvels of Irving
 
-|\        /|     /\      ________                 /\      |       _______ 
-|  \    /  |    /  \    |        }   \      /    /  \     |      | 
-|    \/    |   /    \   |-------}     \    /    /    \    |      |_______ 
-|          |  /------\  |      \       \  /    /------\   |              | 
-|          | /        \ |        \      \/    /        \  |_____  _______| 
+-- .- .-. ...- . .-.. ... / --- ..-. / .. .-. ...- .. -. --.
  
-                         OF IRVING!
- 
-CODE REPOSITORY, feel free to take and edit anything you see.
+CODE REPOSITORY, feel free to see our solutioins to our problems.
 
 ᶦᶠ ʸᵒᵘʳ ʰᵉʳᵉ ᵗʰᵉⁿ ʸᵒᵘʳ ᵖᵃʳᵗ ᵒᶠ ᵗʰᵉ ᵗᵉᵃᵐ ˢᵒ ...
 
-                                                      
-                                                                                                                                        
-                                                                                                                                        
-                                                                     
-                                                                        
-                                                                                                                                      
-                                                                                                                                      
-        
