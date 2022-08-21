@@ -3,7 +3,6 @@ package org.firstinspires.ftc.teamcode;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotorEx;
-//import com.qaulcomm.robotcore.hardware.CRServo;
 
 @Autonomous(name = "Auto_Duck_Blue", group = "Autonomous")
 
