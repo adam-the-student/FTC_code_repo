@@ -8,7 +8,7 @@ import com.qualcomm.robotcore.hardware.ColorSensor;
 
 @Autonomous(name = "Auto_Duck_Red", group = "Autonomous")
 
-public class  AutoDuckandParkBlue extends LinearOpMode {
+public class  AutoDuckParkandRed  extends LinearOpMode {
     DcMotorEx frontLeftWheel;
     DcMotorEx frontRightWheel;
     DcMotorEx backLeftWheel;
@@ -42,10 +42,10 @@ public class  AutoDuckandParkBlue extends LinearOpMode {
         moveForwardOrBack(-720,0.25);
         sleep(1000);
         moveLeftOrRight(-720,0.25);
-        frontLeftWheel.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-        frontRightWheel.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-        backLeftWheel.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
-        backRightWheel.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODER);
+        frontLeftWheel.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODERS);
+        frontRightWheel.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODERS);
+        backLeftWheel.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODERS);
+        backRightWheel.setMode(DcMotorEx.RunMode.RUN_WITHOUT_ENCODERS);
     }
 
     public void moveLeftOrRight(int distance, double power) {
