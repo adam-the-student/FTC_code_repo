@@ -6,7 +6,7 @@ import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotorEx;
 import com.qualcomm.robotcore.hardware.ColorSensor;
 
-@Autonomous(name = "Auto_Duck_Red", group = "Autonomous")
+@Autonomous(name = "Auto_Duck_Blue", group = "Autonomous")
 
 public class  AutoDuckandParkBlue extends LinearOpMode {
     DcMotorEx frontLeftWheel;
