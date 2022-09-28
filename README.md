@@ -8,8 +8,4 @@ CODE REPOSITORY, feel free to see our solutioins to our problems.
 
 **THINGS WE HAVE TO DO:**
 
->*Teach Programming team coding
 
->*Im Here*
-
-> **
