@@ -53,15 +53,36 @@ public class TeleOpForPowerPlay extends LinearOpMode {
                 double motor2Power = (y - x - rx) / denominator;  //motor2 is top right corner
                 double motor3Power = (y - x + rx) / denominator;  //motor3 is bottom left corner
                 double motor4Power = (y + x - rx) / denominator;  //motor4 is bottom right corner
-                motor1.setPower(motor1Power / 2);  // motor1 is top left
-                motor2.setPower(-motor2Power / 2);  // motor2 is top right
-                motor3.setPower(motor3Power / 2);  // motor3 is bottom left
-                motor4.setPower(-motor4Power / 2);  // motor4 is bottom right
+
+                if(gamepad1.left_trigger >= 0.1){
+                    motor1Power = motor1Power/4;
+                    motor2Power = motor2Power/4;
+                    motor3Power = motor3Power/4;
+                    motor4Power = motor4Power/4;
+                }
+                else if(gamepad1.right_trigger >= 0.1){
+                    motor1Power = motor1Power*2;
+                    motor2Power = motor2Power*2;
+                    motor3Power = motor3Power*2;
+                    motor4Power = motor4Power*2;
+                }
+
+                motor1.setPower(motor1Power/2);  // motor1 is top left
+                motor2.setPower(-motor2Power/2);  // motor2 is top right
+                motor3.setPower(motor3Power/2);  // motor3 is bottom left
+                motor4.setPower(-motor4Power/2);  // motor4 is bottom right
 
                 // gamepad 2 starts
+
+                // arm starts
                 double ArmMotorpower = -gamepad2.right_stick_y / 2;
                 ArmMotor1.setPower(ArmMotorpower);
+                if(ArmMotorpower == 0){
+                    ArmMotor1.setZeroPowerBehavior(DcMotor.ZeroPowerBehavior.BRAKE);
+                }
 
+
+                //claw starts
                 double servoPos;
 
                 if(gamepad2.right_trigger>0){
