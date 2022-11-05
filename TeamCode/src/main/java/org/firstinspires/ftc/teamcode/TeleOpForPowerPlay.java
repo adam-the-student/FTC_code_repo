@@ -25,7 +25,7 @@ public class TeleOpForPowerPlay extends LinearOpMode {
     public void runOpMode() {
         motor1 = hardwareMap.dcMotor.get("frontLeft");
         motor2 = hardwareMap.dcMotor.get("frontRight");
-        motor3 = hardwareMap.dcMotor.get("backLeft);
+        motor3 = hardwareMap.dcMotor.get("backLeft");
         motor4 = hardwareMap.dcMotor.get("backRight");
         ArmMotor1 = hardwareMap.dcMotor.get("arm");
         //ArmMotor2 = hardwareMap.dcMotor.get("m2");
