@@ -7,7 +7,7 @@ import com.qualcomm.robotcore.hardware.CRServo;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.Servo;
 
-@TeleOp(name = "PowerPlay_teleOP", group = "teleop")
+@TeleOp(name = "Current_powerPlay_teleop", group = "teleop")
 
 
 public class TeleOpForPowerPlay extends LinearOpMode {
