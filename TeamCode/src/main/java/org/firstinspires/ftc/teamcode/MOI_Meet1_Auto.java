@@ -33,18 +33,26 @@ public class MOI_Meet1_Auto extends LinearOpMode {
         int placeLocation;
         waitForStart();
 
-        strafe(900,-0.5);
+        strafe(1750,-0.3);
 //        //- for left, + for right
 //        strafe(time, power);
 //        //- for backward, + for forward
 //        forward_backward(time, power);
 //        //- for counter clockwise, + for clockwise
 //        clockwise(0, 0);
-        sleep(1000);
-     if (color1.green() <= 180 && color1.green() >= 120 && color1.blue() <= 180 && color1.blue() >= 120) {
+        sleep(2000);
+
+        telemetry.addData("red value", color1.red());
+        telemetry.addData("green value", color1.green());
+        telemetry.addData("blue value", color1.blue());
+        telemetry.update();
+
+        sleep(4500);
+
+     if (color1.green() <= 1000 && color1.green() >= 400 && color1.blue() <= 700 && color1.blue() >= 400) {
        placeLocation = 2;
        telemetry.addData("Location", "3");
-     } else if (color1.green() <= 650 && color1.green() >= 450 && color1.blue() <= 580 && color1.blue() >= 280) {
+     } else if (color1.green() <= 4500 && color1.green() >= 1500 && color1.blue() <= 3000 && color1.blue() >= 1000) {
        placeLocation = 1;
        telemetry.addData("Location", "2");
      } else {
@@ -60,11 +68,11 @@ public class MOI_Meet1_Auto extends LinearOpMode {
    public void parkingFromSignal(int placeLocation){
 
      if(placeLocation == 0){
-     forward_backward(750, 0.5);
+     forward_backward(500, -0.5);
      } else if(placeLocation == 1){
 
      } else {
-       forward_backward(750, -0.5);
+       forward_backward(500, 0.5);
      }
 
    }
