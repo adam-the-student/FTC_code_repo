@@ -7,8 +7,6 @@ CODE REPOSITORY, feel free to see our solutioins to our problems.
 
 THINGS WE HAVE TO DO:
 
-> Make autonomous
+> Practice
 
-> Practice teleOP
-
-> TroubleShoot x 10
+> Optimize
